@@ -59,6 +59,36 @@ html {
     max-width: 100%; /* don't be wider than your parent container, image */
 }
 
+
+
+ul.block-grid {
+  display: flex; /* display elements next to each other */
+  flex-wrap: wrap;
+  list-style: none; /* disable bullets on the LI items */
+  padding-left: 0; /* reset the browser extra padding on UL elements */
+}
+
+ul.block-grid li {
+  padding: 5px; /* Adding a 10px padding on a 100% width would not work if it wasn't for box-sizing: border-box! */
+}
+
+.block-grid-small-2 > li {
+  width: 50%;
+}
+.block-grid-small-3 > li {
+  width: 33.333%;
+}
+.block-grid-small-4 > li {
+  width: 25%;
+}
+.block-grid-small-5 > li {
+  width: 20%;
+}
+.block-grid-small-6 > li {
+  width: 16.666%;
+}
+
+
 @media only screen and (min-width: 641px) {
     .col-medium-12 {
         width: 100%;
@@ -95,6 +125,22 @@ html {
     }
     .col-medium-1 {
         width: 8.333%;
+    }
+    
+    .block-grid-medium-2 > li {
+      width: 50%;
+    }
+    .block-grid-medium-3 > li {
+      width: 33.333%;
+    }
+    .block-grid-medium-4 > li {
+      width: 25%;
+    }
+    .block-grid-medium-5 > li {
+      width: 20%;
+    }
+    .block-grid-medium-6 > li {
+      width: 16.666%;
     }
 }
 
@@ -134,5 +180,21 @@ html {
     }
     .col-large-1 {
         width: 8.333%;
+    }
+    
+    .block-grid-large-2 > li {
+      width: 50%;
+    }
+    .block-grid-large-3 > li {
+      width: 33.333%;
+    }
+    .block-grid-large-4 > li {
+      width: 25%;
+    }
+    .block-grid-large-5 > li {
+      width: 20%;
+    }
+    .block-grid-large-6 > li {
+      width: 16.666%;
     }
 }

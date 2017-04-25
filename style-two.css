@@ -1,0 +1,28 @@
+.kittens-gallery {
+  justify-content: center; /* if there are less elements on the last row, center them instead of sending them to the left */
+  text-align: center; /* This will center the caption text below each image */
+}
+
+.kittens-gallery img {
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.kittens-gallery p {
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 641px) {
+    .kittens-gallery > li > p {
+        font-size:1.2em;
+    }
+    
+    .kittens-gallery img {
+        border:1px solid #999;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    
+}
